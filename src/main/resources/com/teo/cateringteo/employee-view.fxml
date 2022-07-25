@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teo.cateringteo.controller.EmployeeController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="900.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" text="       Orders">
+                    <font>
+                        <Font name="Candara Light" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="433.0" prefWidth="750.0">
+            <children>
+                <TableView fx:id="table" prefHeight="350.0" prefWidth="676.0" style="-fx-background-color: paletturqoise;">
+                    <columns>
+                        <TableColumn fx:id="idColumn" minWidth="7.333313345909119" prefWidth="55.3333181142807" text="ID" />
+                        <TableColumn fx:id="clientColumn" prefWidth="218.00002670288086" text="Client" />
+                        <TableColumn fx:id="dateColumn" prefWidth="115.33331298828125" text="Date" />
+                        <TableColumn fx:id="timeColumn" prefWidth="126.0" text="Time" />
+                        <TableColumn fx:id="itemsColumn" prefWidth="161.33331298828125" text="Items" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="800.0">
+            <children>
+                <HBox alignment="CENTER" onDragDetected="#onBackButtonClick" prefHeight="45.0" prefWidth="267.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: skyblue;" text="Back">
+                            <font>
+                                <Font name="Candara Light" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

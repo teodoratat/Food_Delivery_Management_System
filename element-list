@@ -1,0 +1,8 @@
+module:com.teo.cateringteo
+com.teo.cateringteo
+com.teo.cateringteo.BussinessLogic
+com.teo.cateringteo.controller
+com.teo.cateringteo.DataAccess
+com.teo.cateringteo.GUI
+com.teo.cateringteo.Service
+com.teo.cateringteo.Service.Filters

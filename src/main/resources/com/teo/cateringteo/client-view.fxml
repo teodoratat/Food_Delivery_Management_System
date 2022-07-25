@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.teo.cateringteo.controller.ClientController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="900.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="       Order Placement">
+               <font>
+                  <Font name="Candara Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="900.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="36.0" prefWidth="92.0">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onEmptyButtonClick" prefHeight="21.0" prefWidth="110.0" style="-fx-background-color: #ff6969;" text="Empty cart">
+                     <font>
+                        <Font name="Candara Light" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="39.0" prefWidth="81.0">
+               <children>
+                  <MenuButton fx:id="cartMenuButton" mnemonicParsing="false" text="Cart" />
+               </children>
+            </VBox>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onPlaceOrderButtonClick" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: lightgreen;" text="Place Order">
+               <font>
+                  <Font name="Candara Light" size="13.0" />
+               </font>
+            </Button>
+            <Region prefHeight="33.0" prefWidth="42.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="350.0" prefWidth="750.0">
+         <children>
+            <TableView fx:id="table" prefHeight="350.0" prefWidth="676.0" style="-fx-background-color: paletturqoise;">
+               <columns>
+                  <TableColumn fx:id="titleColumn" prefWidth="250.0" text="Title" />
+                  <TableColumn fx:id="ratingColumn" prefWidth="70.0" text="Rating" />
+                  <TableColumn fx:id="caloriesColumn" prefWidth="70.0" text="Calories" />
+                  <TableColumn fx:id="proteinColumn" prefWidth="70.0" text="Proteins" />
+                  <TableColumn fx:id="fatColumn" prefWidth="70.0" text="Fat" />
+                  <TableColumn fx:id="sodiumColumn" prefWidth="70.0" text="Sodium" />
+                  <TableColumn fx:id="priceColumn" prefWidth="70.0" text="Price" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="800.0">
+         <children>
+            <Button contentDisplay="CENTER" layoutX="423.0" layoutY="23.0" mnemonicParsing="false" onAction="#onAddToCartButtonClick" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: skyblue;" text="Add To cart">
+               <font>
+                  <Font name="Candara Light" size="13.0" />
+               </font>
+            </Button>
+            <Region layoutX="717.0" layoutY="10.0" prefHeight="50.0" prefWidth="226.0" />
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onRemoveAllButtonClick" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #ff6969;" text="Remove all">
+               <font>
+                  <Font name="Candara Light" size="13.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="107.0">
+               <children>
+                  <MenuButton fx:id="filtersMenuButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Filters" />
+               </children>
+            </HBox>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onAddFilterButtonClick" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: lightgreen;" text="Add Filter">
+               <font>
+                  <Font name="Candara Light" size="13.0" />
+               </font>
+            </Button>
+            <Region prefHeight="49.0" prefWidth="43.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER" onDragDetected="#onBackButtonClick" prefHeight="45.0" prefWidth="267.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: skyblue;" text="Back">
+                     <font>
+                        <Font name="Candara Light" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
