@@ -13,8 +13,7 @@ Sets are collections that do not accept equal objects (which equality is defined
 This project required the use of scatter tables and mapping of certain objects. A prime example would be even keeping orders in memory that, instead of having a list of products as an instance variable, were mapped to an object of type Order.
 ## GUI
 ### Log in 
-This is the LogIn window, in which the user must write the name and the password. There are 4 possible windows that can be open after that: an admin window, an employee window, or a client window. In case the sign up button is pressed,  a new similar window for creating a client account will appear. 
-#### ![image](https://user-images.githubusercontent.com/79631600/226594186-70137e1f-b5bf-43ff-b461-c7b69e378ea3.png)  
+This is the LogIn window, in which the user must write the name and the password. There are 4 possible windows that can be open after that: an admin window, an employee window, or a client window. In case the sign up button is pressed,  a new similar window for creating a client account will appear.   
 #### ![image](https://user-images.githubusercontent.com/79631600/226594331-7d9f4780-003d-40f0-a9f8-ac3b15aadeca.png)
 ### Menu Window
 The admin window will appear once logged in, which has all the requested requirements: add/modify/delete/search products and view reports. Once the Reports button is pressed, a new window for the reports will open and the admin will can read all the reports wanted.
